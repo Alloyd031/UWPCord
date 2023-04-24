@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="UWPCord.Pages.ChannelOnePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPCord.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+
+    <Grid>
+        <Grid Height="49" VerticalAlignment="Top">
+            <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE8F2;" FontSize="28" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            <TextBlock Text="channel-one" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" Margin="52,0,0,0"/>
+            <TextBlock Text="Just a test channel." HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" Margin="203,0,0,0"/>
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal" Padding="0,0,10,0">
+                <Button x:Name="MembersButton" Height="29" Width="32" Background="Transparent" BorderBrush="Transparent" Click="MembersButton_Click" ToolTipService.ToolTip="Show/Hide Member List">
+                    <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE125;" FontSize="16" Margin="-16,-14,-16,-15"/>
+                </Button>
+                <AppBarSeparator/>
+                <AutoSuggestBox QueryIcon="Find" PlaceholderText="Search" Width="144"/>
+                <AppBarSeparator/>
+                <Button x:Name="InboxButton" Height="29" Width="32" Background="Transparent" BorderBrush="Transparent" ToolTipService.ToolTip="Inbox">
+                    <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE119;" FontSize="16" Margin="-16,-14,-16,-15"/>
+                </Button>
+                <AppBarSeparator/>
+                <Button x:Name="HelpButton" Height="29" Width="32" Background="Transparent" BorderBrush="Transparent" ToolTipService.ToolTip="Help">
+                    <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE11B;" FontSize="16" Margin="-16,-14,-16,-15"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="MembersPanel" Width="240" HorizontalAlignment="Right" Margin="0,49,0,0">
+            <TextBlock Text="Online - 1" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Margin="10,17,0,0"/>
+            <Button x:Name="UserButton" Height="42" Width="220" Margin="0,41,0,0" VerticalAlignment="Top"
+                    Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Click="UserButton_Click">
+                <Grid Margin="-102,0,-102,0">
+                    <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE13D;" Width="28" Height="28" Margin="0,0,173,0"/>
+                    <TextBlock Text="Alloyd" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="46,0,0,0"/>
+                    <FontIcon FontFamily="Segoe Fluent Icons" FontSize="14" Glyph="&#xE208;" Width="28" Height="28" Margin="95,0,81,0" ToolTipService.ToolTip="Server Owner"/>
+                </Grid>
+            </Button>
+        </Grid>
+        <Grid x:Name="NotAvailableGrid" Margin="0,49,240,0">
+            <TextBlock Text="Not available." Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Page>

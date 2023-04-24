@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="UWPCord.Pages.FriendsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPCord.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+
+    <Grid>
+        <Grid Height="49" VerticalAlignment="Top">
+            <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE13D;" FontSize="28" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            <TextBlock Text="Friends" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" Margin="52,0,0,0"/>
+            <Button Content="Online" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="147,0,0,0"/>
+            <Button Content="All" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="229,0,0,0"/>
+            <Button Content="Pending" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="311,0,0,0"/>
+            <Button Content="Blocked" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="393,0,0,0"/>
+            <Button Content="Add Friend" Style="{StaticResource AccentButtonStyle}" Height="32" Width="93" Margin="475,0,0,0"/>
+        </Grid>
+        <TextBlock Text="Not available." Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</Page>
