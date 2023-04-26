@@ -7,18 +7,38 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
+    Loaded="Page_Loaded">
 
     <Grid>
         <Grid Height="49" VerticalAlignment="Top">
             <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE13D;" FontSize="28" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
             <TextBlock Text="Friends" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" Margin="52,0,0,0"/>
-            <Button Content="Online" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="147,0,0,0"/>
-            <Button Content="All" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="229,0,0,0"/>
-            <Button Content="Pending" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="311,0,0,0"/>
-            <Button Content="Blocked" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="393,0,0,0"/>
-            <Button Content="Add Friend" Style="{StaticResource AccentButtonStyle}" Height="32" Width="93" Margin="475,0,0,0"/>
+            <Button Content="Online" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="147,0,0,0" Click="Button_Click"/>
+            <Button Content="All" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="229,0,0,0" Click="Button_Click_1"/>
+            <Button Content="Pending" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="311,0,0,0" Click="Button_Click_2"/>
+            <Button Content="Blocked" Background="Transparent" BorderBrush="Transparent" Height="32" Width="77" Margin="393,0,0,0" Click="Button_Click_3"/>
+            <Button Content="Add Friend" Style="{StaticResource AccentButtonStyle}" Height="32" Width="93" Margin="475,0,0,0" Click="Button_Click_4"/>
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal" Padding="0,0,10,0">
+                <Button x:Name="NewGroupDMButton" Height="29" Width="32" Background="Transparent" BorderBrush="Transparent" 
+                        ToolTipService.ToolTip="New Group DM">
+                    <FontIcon Glyph="&#xE8FA;" FontSize="16" Margin="-16,-14,-16,-15"/>
+                </Button>
+                <AppBarSeparator/>
+                <Button x:Name="InboxButton" Height="29" Width="32" Background="Transparent" BorderBrush="Transparent" 
+                        ToolTipService.ToolTip="Inbox">
+                    <FontIcon Glyph="&#xE119;" FontSize="16" Margin="-16,-14,-16,-15"/>
+                </Button>
+                <AppBarSeparator/>
+                <Button x:Name="HelpButton" Height="29" Width="32" Background="Transparent" BorderBrush="Transparent" ToolTipService.ToolTip="Help">
+                    <FontIcon Glyph="&#xE11B;" FontSize="16" Margin="-16,-14,-16,-15"/>
+                </Button>
+            </StackPanel>
         </Grid>
-        <TextBlock Text="Not available." Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <AutoSuggestBox x:Name="SearchFriends" IsEnabled="False" QueryIcon="Find" PlaceholderText="Search" VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,54,0,0" Width="1133"/>
+        <Frame x:Name="FriendsFrame" Margin="0,91,352,0"/>
+        <Grid HorizontalAlignment="Right" Width="352" Margin="0,50,0,0">
+            <TextBlock Style="{StaticResource CaptionTextBlockStyle}" FontSize="26" Text="Active Now" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        </Grid>
     </Grid>
 </Page>

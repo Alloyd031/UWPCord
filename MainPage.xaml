@@ -38,11 +38,11 @@
         </Grid>
         <Grid Grid.Row="1" Width="72" Grid.RowSpan="3" HorizontalAlignment="Left">
             <Button x:Name="DirectMessages" Height="48" Width="48" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="DirectMessages_Click">
+                    Background="Transparent" BorderBrush="Transparent" Click="DirectMessages_Click" ToolTipService.ToolTip="Direct Messages">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE15F;" FontSize="24"/>
             </Button>
             <Button x:Name="TestServer" Height="48" Width="48" Margin="0,72,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="TestServer_Click">
+                    Background="Transparent" BorderBrush="Transparent" Click="TestServer_Click" ToolTipService.ToolTip="Test Server">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE128;" FontSize="24"/>
             </Button>
         </Grid>
