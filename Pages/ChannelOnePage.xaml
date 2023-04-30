@@ -42,7 +42,10 @@
             </Button>
         </Grid>
         <Grid x:Name="NotAvailableGrid" Margin="0,49,240,0">
-            <TextBlock Text="Not available." Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                <FontIcon Glyph="&#xEA39;" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBlock Text="Not available." Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,65,0,0"/>
+            </Grid>
         </Grid>
     </Grid>
 </Page>
