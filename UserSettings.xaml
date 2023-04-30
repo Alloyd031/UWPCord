@@ -169,7 +169,9 @@
                 </Button>
             </Grid>
         </ScrollViewer>
-        <Frame x:Name="UserSettingsFrame" Margin="189,0,0,72" Grid.Row="1"/>
+        <ScrollViewer Margin="189,0,0,72" Grid.Row="1">
+            <Frame x:Name="UserSettingsFrame"/>
+        </ScrollViewer>
         <Grid Height="72" VerticalAlignment="Bottom" Margin="189,0,0,0" Grid.Row="1">
             <Button x:Name="LogoutButton" Width="44" Height="44" Margin="10,0,0,0" ToolTipService.ToolTip="Log Out">
                 <FontIcon Glyph="&#xF3B1;"/>
