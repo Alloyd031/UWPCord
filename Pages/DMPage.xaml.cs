@@ -43,5 +43,10 @@ namespace UWPCord.Pages
             UserInfoDialog dialog = new UserInfoDialog();
             await dialog.ShowAsync();
         }
+        private async void UserSettingsButton_Click(object sender, RoutedEventArgs e)
+        {
+            UserSettings dialog = new UserSettings();
+            await dialog.ShowAsync();
+        }
     }
 }

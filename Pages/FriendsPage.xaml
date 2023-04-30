@@ -34,8 +34,8 @@
                     <FontIcon Glyph="&#xE11B;" FontSize="16" Margin="-16,-14,-16,-15"/>
                 </Button>
             </StackPanel>
+            <AutoSuggestBox x:Name="SearchFriends" IsEnabled="False" QueryIcon="Find" PlaceholderText="Search" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="573,0,0,0" Width="300"/>
         </Grid>
-        <AutoSuggestBox x:Name="SearchFriends" IsEnabled="False" QueryIcon="Find" PlaceholderText="Search" VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,54,0,0" Width="1133"/>
         <Frame x:Name="FriendsFrame" Margin="0,91,352,0"/>
         <Grid HorizontalAlignment="Right" Width="352" Margin="0,50,0,0">
             <TextBlock Style="{StaticResource CaptionTextBlockStyle}" FontSize="26" Text="Active Now" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>

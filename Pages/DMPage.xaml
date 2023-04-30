@@ -31,7 +31,8 @@
                 </Grid>
             </Button>
             <Grid VerticalAlignment="Bottom" Height="53">
-                <Button x:Name="SettingsButton" Height="32" Width="32" Background="Transparent" BorderBrush="Transparent" Margin="202,0,0,0" ToolTipService.ToolTip="User Settings">
+                <Button x:Name="UserSettingsButton" Height="32" Width="32" Background="Transparent" BorderBrush="Transparent" Margin="202,0,0,0" ToolTipService.ToolTip="User Settings"
+                        Click="UserSettingsButton_Click">
                     <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE115;" FontSize="16" Margin="-16,-16,-16,-16"/>
                 </Button>
                 <Button x:Name="HeadphonesButton" Height="32" Width="32" Background="Transparent" BorderBrush="Transparent" Margin="165,0,0,0" ToolTipService.ToolTip="Deafen/Undeafen">
