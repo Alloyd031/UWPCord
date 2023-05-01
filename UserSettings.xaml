@@ -14,7 +14,7 @@
     <Grid>
         <Grid x:Name="AppTitleBar"
               Background="Transparent" VerticalAlignment="Top" Height="50" Margin="190,0,0,0"/>
-        <ScrollViewer VerticalScrollBarVisibility="Visible" Grid.Row="1" HorizontalAlignment="Left">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden" Grid.Row="1" HorizontalAlignment="Left">
             <Grid>
                 <Grid VerticalAlignment="Top" Height="50">
                     <Button

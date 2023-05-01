@@ -48,5 +48,10 @@ namespace UWPCord
         {
             this.ContentFrame.Navigate(typeof(TestServerPage));
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.ContentFrame.GoBack();
+        }
     }
 }
