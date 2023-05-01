@@ -39,10 +39,11 @@ namespace UWPCord.Pages
             UserInfoDialog dialog = new UserInfoDialog();
             await dialog.ShowAsync();
         }
-        private async void UserSettingsButton_Click(object sender, RoutedEventArgs e)
+        private void UserSettingsButton_Click(object sender, RoutedEventArgs e)
         {
-            UserSettings dialog = new UserSettings();
-            await dialog.ShowAsync();
+            Frame contentFrame = Window.Current.Content as Frame;
+            MainPage mp = contentFrame.Content as MainPage;
+            contentFrame.Navigate(typeof(UserSettings));
         }
     }
 }
