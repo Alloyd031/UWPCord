@@ -39,6 +39,7 @@ namespace UWPCord
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "My Account";
         }
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
@@ -47,110 +48,137 @@ namespace UWPCord
         private void MyAccount_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "My Account";
         }
         private void Profiles_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Profiles";
         }
         private void PrivacyAndSafety_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Privacy and Safety";
         }
         private void AuthorizedApps_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Authorized Apps";
         }
         private void Devices_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Devices";
         }
         private void Connections_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Connections";
         }
         private void FriendRequests_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Friend Requests";
         }
         private void Nitro_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Nitro";
         }
         private void ServerBoost_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Server Boost";
         }
         private void Subscriptions_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Subscriptions";
         }
         private void GiftInvertory_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Gift Invertory";
         }
         private void Billing_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Billing";
         }
         private void Appearance_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Appearance";
         }
         private void Accessibility_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Accessibility";
         }
         private void VoiceAndVideo_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Voice and Video";
         }
         private void TextAndImages_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Text and Images";
         }
         private void Notifications_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Notifications";
         }
         private void Keybinds_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Keybinds";
         }
         private void Language_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Language";
         }
         private void WindowsSettings_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Windows Settings";
         }
         private void StreamerMode_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Streamer Mode";
         }
         private void Advanced_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Advanced";
         }
         private void ActivityPrivacy_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Activity Privacy";
         }
         private void RegistreredGames_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Registrered Games";
         }
         private void GameOverlay_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Game Overlay";
         }
         private void WhatsNew_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "What's New";
         }
         private void Hypesquad_Click(object sender, RoutedEventArgs e)
         {
             this.UserSettingsFrame.Navigate(typeof(NotAvailable));
+            PageName.Text = "Hypesquad";
         }
     }
 }
