@@ -13,17 +13,17 @@
 
     <Grid>
         <Grid x:Name="AppTitleBar"
-              Background="Transparent" VerticalAlignment="Top" Height="40" Margin="190,0,0,0">
-            <TextBlock x:Name="PageName" Text="PageName" FontSize="20" Style="{StaticResource CaptionTextBlockStyle}"
+              Background="Transparent" VerticalAlignment="Top" Height="32" Margin="190,0,0,0">
+            <TextBlock x:Name="PageName" Text="PageName" FontSize="15" Style="{StaticResource CaptionTextBlockStyle}"
                        HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
         </Grid>
         <ScrollViewer VerticalScrollBarVisibility="Hidden" Grid.Row="1" HorizontalAlignment="Left">
             <Grid>
-                <Grid VerticalAlignment="Top" Height="40">
+                <Grid VerticalAlignment="Top" Height="32">
                     <Button
 					x:Name="BackButton"
-					Width="40"
-					Height="40"
+					Width="46"
+					Height="32"
 					AutomationProperties.Name="Back"
                     Style="{StaticResource NavigationBackButtonNormalStyle}"    
 					Background="Transparent"
@@ -33,146 +33,146 @@
                     </Button>
                     <TextBlock
                        x:Name="SettingsTitle"
-                       Text="User Settings" FontSize="20" HorizontalAlignment="Left"
+                       Text="User Settings" FontSize="15" HorizontalAlignment="Center"
                        Style="{StaticResource CaptionTextBlockStyle}"
-                       VerticalAlignment="Center" Margin="45,0,0,0"/>
+                       VerticalAlignment="Center"/>
                 </Grid>
-                <Button x:Name="MyAccount" Height="36" Width="189" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="MyAccount_Click" Margin="0,40,0,0" HorizontalAlignment="Center">
+                <Button x:Name="MyAccount" Height="36" Width="189" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="MyAccount_Click" Margin="0,32,0,0" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="My Account" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="Profiles" Height="36" Width="190" Margin="0,76,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Profiles_Click" HorizontalAlignment="Center">
+                <Button x:Name="Profiles" Height="36" Width="190" Margin="0,68,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Profiles_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Profiles" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="PrivacyAndSafety" Height="36" Width="189" Margin="0,112,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="PrivacyAndSafety_Click" HorizontalAlignment="Center">
+                <Button x:Name="PrivacyAndSafety" Height="36" Width="189" Margin="0,104,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="PrivacyAndSafety_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Privacy and Safety" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="AuthorizedApps" Height="36" Width="189" Margin="0,148,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="AuthorizedApps_Click" HorizontalAlignment="Center">
+                <Button x:Name="AuthorizedApps" Height="36" Width="189" Margin="0,140,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="AuthorizedApps_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Authorized Apps" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="Devices" Height="36" Width="189" Margin="0,184,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Devices_Click" HorizontalAlignment="Center">
+                <Button x:Name="Devices" Height="36" Width="189" Margin="0,176,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Devices_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Devices" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="Connections" Height="36" Width="189" Margin="0,220,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Connections_Click" HorizontalAlignment="Center">
+                <Button x:Name="Connections" Height="36" Width="189" Margin="0,212,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Connections_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Connections" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="FriendRequests" Height="36" Width="189" Margin="0,256,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="FriendRequests_Click" HorizontalAlignment="Center">
+                <Button x:Name="FriendRequests" Height="36" Width="189" Margin="0,248,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="FriendRequests_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Friend Requests" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <MenuFlyoutSeparator VerticalAlignment="Top" Margin="6,297,0,0"/>
-                <Button x:Name="Nitro" Height="36" Width="189" Margin="0,305,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Nitro_Click" HorizontalAlignment="Center">
+                <MenuFlyoutSeparator VerticalAlignment="Top" Margin="6,289,0,0"/>
+                <Button x:Name="Nitro" Height="36" Width="189" Margin="0,297,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Nitro_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Nitro" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="ServerBoost" Height="36" Width="189" Margin="0,341,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="ServerBoost_Click" HorizontalAlignment="Center">
+                <Button x:Name="ServerBoost" Height="36" Width="189" Margin="0,333,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="ServerBoost_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Server Boost" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="Subscriptions" Height="36" Width="189" Margin="0,377,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Subscriptions_Click" HorizontalAlignment="Center">
+                <Button x:Name="Subscriptions" Height="36" Width="189" Margin="0,369,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Subscriptions_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Subscriptions" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="GiftInvertory" Height="36" Width="189" Margin="0,413,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="GiftInvertory_Click" HorizontalAlignment="Center">
+                <Button x:Name="GiftInvertory" Height="36" Width="189" Margin="0,405,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="GiftInvertory_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Gift Invertory" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                         <TextBlock Text="Beta" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="147,0,0,0" Foreground="BlueViolet"/>
                     </Grid>
                 </Button>
-                <Button x:Name="Billing" Height="36" Width="189" Margin="0,449,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Billing_Click" HorizontalAlignment="Center">
+                <Button x:Name="Billing" Height="36" Width="189" Margin="0,441,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Billing_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Billing" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,490,0,0"/>
-                <Button x:Name="Appearance" Height="36" Width="189" Margin="0,498,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Appearance_Click" HorizontalAlignment="Center">
+                <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,482,0,0"/>
+                <Button x:Name="Appearance" Height="36" Width="189" Margin="0,490,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Appearance_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Appearance" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="Accessibility" Height="36" Width="189" Background="Transparent" BorderBrush="Transparent" Click="Accessibility_Click" Margin="0,534,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <Button x:Name="Accessibility" Height="36" Width="189" Background="Transparent" BorderBrush="Transparent" Click="Accessibility_Click" Margin="0,526,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Accessibility" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="VoiceAndVideo" Height="36" Width="189" Margin="0,570,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="VoiceAndVideo_Click" HorizontalAlignment="Center">
+                <Button x:Name="VoiceAndVideo" Height="36" Width="189" Margin="0,562,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="VoiceAndVideo_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Voice and Video" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="TextAndImages" Height="36" Width="189" Margin="0,606,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="TextAndImages_Click" HorizontalAlignment="Center">
+                <Button x:Name="TextAndImages" Height="36" Width="189" Margin="0,598,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="TextAndImages_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Text and Images" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="Notifications" Height="36" Width="189" Margin="0,642,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Notifications_Click" HorizontalAlignment="Center">
+                <Button x:Name="Notifications" Height="36" Width="189" Margin="0,634,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Notifications_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Notifications" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="Keybinds" Height="36" Width="189" Margin="0,678,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Keybinds_Click" HorizontalAlignment="Center">
+                <Button x:Name="Keybinds" Height="36" Width="189" Margin="0,670,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Keybinds_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Keybinds" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="AppLanguage" Height="36" Width="190" Margin="0,714,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Language_Click" HorizontalAlignment="Center">
+                <Button x:Name="AppLanguage" Height="36" Width="190" Margin="0,706,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Language_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Language" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="WindowsSettings" Height="36" Width="189" Margin="-1,750,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="WindowsSettings_Click">
+                <Button x:Name="WindowsSettings" Height="36" Width="189" Margin="0,742,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="WindowsSettings_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Windows Settings" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="StreamerMode" Height="36" Width="189" Margin="0,786,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="StreamerMode_Click" HorizontalAlignment="Center">
+                <Button x:Name="StreamerMode" Height="36" Width="189" Margin="0,778,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="StreamerMode_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Streamer Mode" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="Advanced" Height="36" Width="189" Margin="0,822,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Advanced_Click" HorizontalAlignment="Center">
+                <Button x:Name="Advanced" Height="36" Width="189" Margin="0,814,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Advanced_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Advanced" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,863,0,0"/>
-                <Button x:Name="ActivityPrivacy" Height="36" Width="189" Margin="0,871,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="ActivityPrivacy_Click" HorizontalAlignment="Center">
+                <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,855,0,0"/>
+                <Button x:Name="ActivityPrivacy" Height="36" Width="189" Margin="0,863,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="ActivityPrivacy_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Activity Privacy" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="RegistreredGames" Height="36" Width="189" Margin="0,907,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="RegistreredGames_Click">
+                <Button x:Name="RegistreredGames" Height="36" Width="189" Margin="0,899,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="RegistreredGames_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Registrered Games" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="GameOverlay" Height="36" Width="189" Margin="0,943,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="GameOverlay_Click" HorizontalAlignment="Center">
+                <Button x:Name="GameOverlay" Height="36" Width="189" Margin="0,935,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="GameOverlay_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Game Overlay" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,984,0,0"/>
-                <Button x:Name="WhatsNew" Height="36" Width="189" Margin="0,992,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="WhatsNew_Click" HorizontalAlignment="Center">
+                <MenuFlyoutSeparator VerticalAlignment="Top" Margin="1,976,-1,0"/>
+                <Button x:Name="WhatsNew" Height="36" Width="189" Margin="0,984,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="WhatsNew_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="What's New" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
                 </Button>
-                <Button x:Name="Hypesquad" Height="36" Width="189" Margin="0,1028,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Hypesquad_Click" HorizontalAlignment="Center">
+                <Button x:Name="Hypesquad" Height="36" Width="189" Margin="0,1020,0,0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Click="Hypesquad_Click" HorizontalAlignment="Center">
                     <Grid Margin="-95,-18,-94,-18">
                         <TextBlock Text="Hypesquad" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="17,0,0,0"/>
                     </Grid>
