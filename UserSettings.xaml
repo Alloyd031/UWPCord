@@ -179,7 +179,7 @@
                 </Button>
             </Grid>
         </ScrollViewer>
-        <ScrollViewer Margin="190,40,0,0">
+        <ScrollViewer Margin="190,32,0,0">
             <Frame x:Name="UserSettingsFrame"/>
         </ScrollViewer>
     </Grid>
