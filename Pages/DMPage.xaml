@@ -30,25 +30,6 @@
                     <TextBlock Text="Nitro" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="41,0,0,0"/>
                 </Grid>
             </Button>
-            <Grid VerticalAlignment="Bottom" Height="53">
-                <Button x:Name="UserSettingsButton" Height="32" Width="32" Background="Transparent" BorderBrush="Transparent" Margin="202,0,0,0" ToolTipService.ToolTip="User Settings"
-                        Click="UserSettingsButton_Click">
-                    <FontIcon Glyph="&#xE115;" FontSize="16" Margin="-16,-16,-16,-16"/>
-                </Button>
-                <Button x:Name="HeadphonesButton" Height="32" Width="32" Background="Transparent" BorderBrush="Transparent" Margin="165,0,0,0" ToolTipService.ToolTip="Deafen/Undeafen">
-                    <FontIcon Glyph="&#xE7F6;" FontSize="16" Margin="-16,-16,-16,-16"/>
-                </Button>
-                <Button x:Name="MicrophoneButton" Height="32" Width="32" Background="Transparent" BorderBrush="Transparent" Margin="128,0,0,0" ToolTipService.ToolTip="Mute/Unmute">
-                    <FontIcon Glyph="&#xE1D6;" FontSize="16" Margin="-16,-16,-16,-16"/>
-                </Button>
-                <Button x:Name="UserButton" Margin="10,0,0,0" Background="Transparent" BorderBrush="Transparent" Click="UserButton_Click">
-                    <Grid>
-                        <FontIcon Glyph="&#xE13D;" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24"/>
-                        <TextBlock Text="Alloyd" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource CaptionTextBlockStyle}" Margin="29,-2,0,0"/>
-                        <TextBlock Text="#6523" HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{StaticResource CaptionTextBlockStyle}" Margin="29,0,0,-4"/>
-                    </Grid>
-                </Button>
-            </Grid>
         </Grid>
         <Frame x:Name="DMFrame" Margin="244,0,0,0"/>
     </Grid>

@@ -48,10 +48,15 @@ namespace UWPCord
         {
             this.ContentFrame.Navigate(typeof(TestServerPage));
         }
-
-        private void BackButton_Click(object sender, RoutedEventArgs e)
+        private async void UserButton_Click(object sender, RoutedEventArgs e)
         {
-            this.ContentFrame.GoBack();
+            UserInfoDialog dialog = new UserInfoDialog();
+            await dialog.ShowAsync();
+        }
+        private async void UserSettingsButton_Click(object sender, RoutedEventArgs e)
+        {
+            UserSettings dialog = new UserSettings();
+            await dialog.ShowAsync();
         }
     }
 }

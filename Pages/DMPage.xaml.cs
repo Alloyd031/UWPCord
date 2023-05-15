@@ -38,16 +38,5 @@ namespace UWPCord.Pages
         {
             this.DMFrame.Navigate(typeof(NitroPage));
         }
-        private async void UserButton_Click(object sender, RoutedEventArgs e)
-        {
-            UserInfoDialog dialog = new UserInfoDialog();
-            await dialog.ShowAsync();
-        }
-        private void UserSettingsButton_Click(object sender, RoutedEventArgs e)
-        {
-            Frame contentFrame = Window.Current.Content as Frame;
-            MainPage mp = contentFrame.Content as MainPage;
-            contentFrame.Navigate(typeof(UserSettings));
-        }
     }
 }
